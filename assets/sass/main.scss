@@ -1,0 +1,37 @@
+// Imports Files
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Outfit:wght@300;400;500;600;700;800&family=Raleway:wght@400;500;600;700&family=Roboto&display=swap');
+
+// Zeroing Out Files
+
+@import "ZeroingOut.scss";
+
+// Variables
+
+@import "variables.scss";
+
+// Started Styles Files
+
+@import "startedStyles.scss";
+
+// General Classes Files
+
+@import "generalClasses.scss";
+
+// Sections Files
+
+@import "sections/header.scss";
+@import "sections/home.scss";
+@import "sections/feedbacks.scss";
+@import "sections/questions.scss";
+@import "sections/video.scss";
+@import "sections/lifestyle.scss";
+@import "sections/direction.scss";
+@import "sections/instructors.scss";
+@import "sections/app.scss";
+@import "sections/classes.scss";
+@import "sections/footer.scss";
+
+// Adaptive Files
+
+@import "media.scss";
