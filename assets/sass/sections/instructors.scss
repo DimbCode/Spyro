@@ -1,0 +1,60 @@
+// Instructors Styles
+
+.instructors {
+    width: 100%;
+    padding: 80px 0 102px 0;
+    background-image: url("../images/instructors-background.svg");
+    background-size: 908px 225px;
+    background-repeat: no-repeat;
+    background-position: left top 422px;
+
+    &__header {
+        margin-bottom: 36px;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
+
+.instructor {
+    position: relative;
+    top: 0;
+    cursor: pointer;
+    transition: .5s;
+    
+    &:hover {
+        top: -20px;
+    }
+
+    &__section {
+
+        &_img {
+            margin-bottom: 20px;
+        }
+
+        &_text {
+            text-align: center;
+        }
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__name {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 170.9%;
+        letter-spacing: 0.03rem;
+        opacity: 0.8;
+    }
+
+    &__text {
+        font-size: 1rem;
+        line-height: 170.9%;
+        letter-spacing: 0.02rem;
+    }
+}

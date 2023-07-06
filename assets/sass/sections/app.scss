@@ -1,0 +1,64 @@
+// App Styles
+
+.app {
+    width: 100%;
+    background: $primaryLinear;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        max-width: 626px;
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        max-width: 436px;
+        margin-bottom: 60px;
+    }
+
+    &__buttons-row {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__btn {
+        opacity: 1;
+        transition: .5s;
+        
+        &:hover {
+            opacity: 0.5;
+        }
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 190px;
+            height: 60px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        &_first {
+            
+            &::before {
+                background-image: url("../images/play-market-icon.svg");
+            } 
+        }
+
+        &_second {
+
+            &::before {
+                background-image: url("../images/app-store-icon.svg");
+            } 
+        }
+    }
+
+    &__img {
+        width: 543px;
+    }
+}

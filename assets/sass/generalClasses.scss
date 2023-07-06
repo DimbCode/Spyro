@@ -1,1 +1,129 @@
 // General Classes Styles
+
+.container {
+    max-width: calc($containerWidth + $containerPadding * 2);
+    width: 100%;
+    padding: 0 $containerPadding;
+    margin: 0 auto;
+    position: relative;
+}
+
+.none {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+
+    &__link {
+        display: inline-block;
+        opacity: 1;
+        transition: .5s;
+        
+        &:hover {
+            opacity: 0.5;
+        }
+
+        &::before {
+            content: "";
+            width: 108px;
+            height: 40px;
+            display: inline-block;
+            background-image: url("../images/logo.svg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+
+%btn {
+    min-width: 185px;
+    height: 45px;
+    background: $primaryColor;
+    padding: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    font-size: 1.25rem;
+    font-weight: 500;
+    position: relative;
+    clip-path: polygon(0% 0%, 100% 0, 100% 0, 90% 100%, 0% 100%);
+    z-index: 1;
+    transition: .5s;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+%btn-2 {
+    min-width: 185px;
+    height: 45px;
+    background: $primaryColor;
+    padding: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    font-size: 1.25rem;
+    font-weight: 500;
+    position: relative;
+    clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%);
+    z-index: 1;
+    transition: .5s;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    text-align: center;
+    align-items: center;
+
+    &__title {
+
+        &_opacity {
+            opacity: 0.7;
+        }
+    }
+
+    &__subtitle {
+        max-width: 784px;
+    }
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 170.9%;
+    letter-spacing: 0.06rem;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    line-height: 170.9%;
+    letter-spacing: 0.025rem;
+}
+
+.none {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}

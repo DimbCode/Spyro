@@ -22,32 +22,30 @@
 
                 <section class="header__section">
                     <div class="logo">
-                        <a href="#" class="logo__link">
-                            <img src="assets/images/logo.svg" alt="Spyro" class="logo__img">
-                        </a>
+                        <a href="#" class="logo__link"></a>
                     </div>
                 </section>
 
                 <section class="header__section">
                     <nav class="header__nav">
-                        <ul class="header__link-list">
+                        <ul class="flex header__link-list">
                             <li class="header__link-item">
-                                <a href="#" class="header__link">
+                                <a href="#classes" class="header__link">
                                     Classes
                                 </a>
                             </li>
                             <li class="header__link-item">
-                                <a href="#" class="header__link">
+                                <a href="#team" class="header__link">
                                     Team
                                 </a>
                             </li>
                             <li class="header__link-item">
-                                <a href="#" class="header__link">
+                                <a href="#about" class="header__link">
                                     About Us
                                 </a>
                             </li>
                             <li class="header__link-item">
-                                <a href="#" class="header__link">
+                                <a href="#gallery" class="header__link">
                                     Gallery
                                 </a>
                             </li>
@@ -73,9 +71,9 @@
             <!-- Home -->
 
             <section class="home">
-                <div class="container">
+                <div class="container home__container">
 
-                    <div class="home__offer">
+                    <div class="home__offer" data-aos="flip-left" data-aos-duration="1000">
                         <h1 class="home__title">
                             <mark class="home__title_marked">Unleash</mark> your
                             Inner Athlete
@@ -99,21 +97,21 @@
             <section class="direction">
                 <div class="container">
 
-                    <header class="section-header direction__header">
+                    <header class="section-header direction__header" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="500">
                         <h2 class="title section-header__title">
                             Find what moves you
                         </h2>
                     </header>
 
-                    <section class="direction__items">
+                    <section class="direction__items" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="500">
 
                         <div class="direction-item-active">
-                            <section class="direction-item-active__section">
+                            <section class="direction-item-active__section direction-item-active__section_img">
                                 <img src="assets/images/direction-active-img.png" alt="" class="direction-item-active__img">
                             </section>
 
-                            <section class="direction-item-active__section">
-                                <img src="assets/images/direction-text-img" alt="" class="direction-item-active__text-img">
+                            <section class="direction-item-active__section direction-item-active__section_text">
+                                <img src="assets/images/direction-text-img.svg" alt="" class="direction-item-active__text-img">
 
                                 <p class="direction-item-active__text">
                                     Expect a heart-pumping workout that will leave you feeling energized and accomplished. Our supportive community of like-minded individuals.
@@ -152,16 +150,16 @@
                 <div class="container">
 
                     <header class="section-header lifestyle__header">
-                        <h2 class="title section-header__title">
+                        <h2 class="title section-header__title" data-aos="fade-down" data-aos-duration="500" data-aos-delay="500">
                             Fit for your lifestyle
                         </h2>
 
-                        <p class="subtitle section-header__subtitle">
+                        <p class="subtitle section-header__subtitle" data-aos="fade-down" data-aos-duration="500" data-aos-delay="700">
                             Wake up with a sunrise meditation, sweat it out with lunchtime HIIT, or unwind with an evening flow. You’ll find movement for every mood with classes sorted by time, style, and skill level.
                         </p>
                     </header>
 
-                    <section class="lifestyle__content">
+                    <section class="lifestyle__content" data-aos="flip-up" data-aos-duration="500" data-aos-delay="1000">
 
                         <img src="assets/images/lifestyle-img.png" alt="" class="lifestyle__img">
 
@@ -174,10 +172,10 @@
 
             <!-- Classes -->
 
-            <section class="classes">
+            <section class="classes" id="classes">
                 <div class="container">
 
-                    <header class="section-header classes__header">
+                    <header class="section-header classes__header" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="500">
                         <h2 class="title section-header__title">
                             Classes
                         </h2>
@@ -187,13 +185,13 @@
 
                         <!-- Class -->
 
-                        <article class="class">
+                        <article class="class" data-aos="fade-down" data-aos-duration="500" data-aos-delay="700">
 
-                            <section class="class__section">
+                            <section class="class__section class__section_img">
                                 <img src="assets/images/class-img-1.png" alt="" class="class__img">
                             </section>
 
-                            <section class="class__section">
+                            <section class="class__section class__section_text">
                                 <div class="class__text-row">
                                     <p class="class__text class__text_direction">
                                         Yoga
@@ -237,7 +235,9 @@
                                     </a>
 
                                     <a href="#" class="class__btn class__btn_second">
-                                        Start a free trail
+                                        <span class="class__btn-wrapper">
+                                            Start a free trail
+                                        </span>
                                     </a>
                                 </div>
                             </section>
@@ -248,13 +248,13 @@
 
                         <!-- Class -->
 
-                        <article class="class">
+                        <article class="class" data-aos="fade-down" data-aos-duration="500" data-aos-delay="800">
 
-                            <section class="class__section">
+                            <section class="class__section class__section_img">
                                 <img src="assets/images/class-img-2.png" alt="" class="class__img">
                             </section>
 
-                            <section class="class__section">
+                            <section class="class__section class__section_text">
                                 <div class="class__text-row">
                                     <p class="class__text class__text_direction">
                                         Fitness
@@ -298,7 +298,9 @@
                                     </a>
 
                                     <a href="#" class="class__btn class__btn_second">
-                                        Start a free trail
+                                        <span class="class__btn-wrapper">
+                                            Start a free trail
+                                        </span>
                                     </a>
                                 </div>
                             </section>
@@ -309,13 +311,13 @@
 
                         <!-- Class -->
 
-                        <article class="class">
+                        <article class="class" data-aos="fade-down" data-aos-duration="500" data-aos-delay="900">
 
-                            <section class="class__section">
+                            <section class="class__section class__section_img">
                                 <img src="assets/images/class-img-3.png" alt="" class="class__img">
                             </section>
 
-                            <section class="class__section">
+                            <section class="class__section class__section_text">
                                 <div class="class__text-row">
                                     <p class="class__text class__text_direction">
                                         Yoga
@@ -359,7 +361,9 @@
                                     </a>
 
                                     <a href="#" class="class__btn class__btn_second">
-                                        Start a free trail
+                                        <span class="class__btn-wrapper">
+                                            Start a free trail
+                                        </span>
                                     </a>
                                 </div>
                             </section>
@@ -370,7 +374,7 @@
 
                     </section>
 
-                    <section class="classes__btn-wrapper">
+                    <section class="classes__btn-wrapper" data-aos="flip-down" data-aos-duration="500" data-aos-delay="1000">
                         <a href="#" class="classes__btn">
                             See all
                         </a>
@@ -383,24 +387,24 @@
 
             <!-- Instructors -->
 
-            <section class="instructors">
+            <section class="instructors" id="team">
                 <div class="container">
 
-                    <header class="section-header instructors__header">
+                    <header class="section-header instructors__header" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="500">
                         <h2 class="title section-header__title">
                             Instructors
                         </h2>
                     </header>
 
-                    <section class="instructors__items">
+                    <section class="instructors__items" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="700">
 
                         <article class="instructor">
 
-                            <section class="instructor__section">
+                            <section class="instructor__section instructor__section_img">
                                 <img src="assets/images/instructor-img-1.png" alt="" class="instructor__img">
                             </section>
 
-                            <section class="instructor__section">
+                            <section class="instructor__section instructor__section_text">
                                 <h3 class="instructor__name">
                                     Jacob Jones
                                 </h3>
@@ -414,11 +418,11 @@
 
                         <article class="instructor">
 
-                            <section class="instructor__section">
+                            <section class="instructor__section instructor__section_img">
                                 <img src="assets/images/instructor-img-2.png" alt="" class="instructor__img">
                             </section>
 
-                            <section class="instructor__section">
+                            <section class="instructor__section instructor__section_text">
                                 <h3 class="instructor__name">
                                     Leslie Alexander
                                 </h3>
@@ -432,11 +436,11 @@
 
                         <article class="instructor">
 
-                            <section class="instructor__section">
+                            <section class="instructor__section instructor__section_img">
                                 <img src="assets/images/instructor-img-3.png" alt="" class="instructor__img">
                             </section>
 
-                            <section class="instructor__section">
+                            <section class="instructor__section instructor__section_text">
                                 <h3 class="instructor__name">
                                     Cameron Williamson
                                 </h3>
@@ -450,11 +454,11 @@
 
                         <article class="instructor">
 
-                            <section class="instructor__section">
+                            <section class="instructor__section instructor__section_img">
                                 <img src="assets/images/instructor-img-4.png" alt="" class="instructor__img">
                             </section>
 
-                            <section class="instructor__section">
+                            <section class="instructor__section instructor__section_text">
                                 <h3 class="instructor__name">
                                     Jane Cooper
                                 </h3>
@@ -476,9 +480,9 @@
             <!-- App -->
 
             <section class="app">
-                <div class="container">
+                <div class="container app__container">
 
-                    <section class="app__section">
+                    <section class="app__section" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
                         <h2 class="title app__title">
                             Download the most loved fitness app
                         </h2>
@@ -493,7 +497,7 @@
                         </div>
                     </section>
 
-                    <section class="app__section">
+                    <section class="app__section" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
                         <img src="assets/images/app-img.png" alt="" class="app__img">
                     </section>
 
@@ -504,10 +508,10 @@
 
             <!-- Video -->
 
-            <section class="video">
-                <div class="container">
+            <section class="video" id="gallery">
+                <div class="container" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
 
-                    <video src="" class="video__item" poster="../images/video-poster.png"></video>
+                    <video src="" class="video__item" poster="assets/images/video-poster.png"></video>
                     <button class="video__btn"></button>
 
                 </div>
@@ -520,18 +524,18 @@
             <section class="feedbacks">
                 <div class="container">
 
-                    <header class="section-header feedbacks__header">
+                    <header class="section-header feedbacks__header" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="500">
                         <h2 class="title section-header__title">
                             Client’s Feedback
                         </h2>
                     </header>
 
-                    <section class="feedbacks__slider">
-                        <div class="feedbacks__slider-wrapper">
+                    <section class="feedbacks__slider swiper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                        <div class="feedbacks__slider-wrapper swiper-wrapper">
 
-                            <article class="feedback">
+                            <article class="feedback swiper-slide">
                                 
-                                <section class="feedback__section">
+                                <section class="feedback__section feedback__section_text">
                                     <p class="feedback__text">
                                         Al-Balad is essentially Jeddah old town. It was once surrounded by a wall, but now only the gates re
                                     </p>
@@ -595,7 +599,7 @@
                                     </div>
                                 </section>
 
-                                <section class="feedback__section">
+                                <section class="feedback__section feedback__section_user">
                                     <img src="assets/images/user-img-1.png" alt="" class="feedback__user-img">
 
                                     <p class="feedback__name">
@@ -605,9 +609,9 @@
                                 
                             </article>
 
-                            <article class="feedback">
+                            <article class="feedback swiper-slide">
                                 
-                                <section class="feedback__section">
+                                <section class="feedback__section feedback__section_text">
                                     <p class="feedback__text">
                                         Al-Balad is essentially Jeddah old town. It was once surrounded by a wall, but now only the gates re
                                     </p>
@@ -671,7 +675,7 @@
                                     </div>
                                 </section>
 
-                                <section class="feedback__section">
+                                <section class="feedback__section feedback__section_user">
                                     <img src="assets/images/user-img-1.png" alt="" class="feedback__user-img">
 
                                     <p class="feedback__name">
@@ -681,9 +685,9 @@
                                 
                             </article>
 
-                            <article class="feedback">
+                            <article class="feedback swiper-slide">
                                 
-                                <section class="feedback__section">
+                                <section class="feedback__section feedback__section_text">
                                     <p class="feedback__text">
                                         Al-Balad is essentially Jeddah old town. It was once surrounded by a wall, but now only the gates re
                                     </p>
@@ -747,7 +751,7 @@
                                     </div>
                                 </section>
 
-                                <section class="feedback__section">
+                                <section class="feedback__section feedback__section_user">
                                     <img src="assets/images/user-img-1.png" alt="" class="feedback__user-img">
 
                                     <p class="feedback__name">
@@ -757,9 +761,9 @@
                                 
                             </article>
 
-                            <article class="feedback">
+                            <article class="feedback swiper-slide">
                                 
-                                <section class="feedback__section">
+                                <section class="feedback__section feedback__section_text">
                                     <p class="feedback__text">
                                         Al-Balad is essentially Jeddah old town. It was once surrounded by a wall, but now only the gates re
                                     </p>
@@ -823,7 +827,7 @@
                                     </div>
                                 </section>
 
-                                <section class="feedback__section">
+                                <section class="feedback__section feedback__section_user">
                                     <img src="assets/images/user-img-1.png" alt="" class="feedback__user-img">
 
                                     <p class="feedback__name">
@@ -833,9 +837,9 @@
                                 
                             </article>
 
-                            <article class="feedback">
+                            <article class="feedback swiper-slide">
                                 
-                                <section class="feedback__section">
+                                <section class="feedback__section feedback__section_text">
                                     <p class="feedback__text">
                                         Al-Balad is essentially Jeddah old town. It was once surrounded by a wall, but now only the gates re
                                     </p>
@@ -899,7 +903,7 @@
                                     </div>
                                 </section>
 
-                                <section class="feedback__section">
+                                <section class="feedback__section feedback__section_user">
                                     <img src="assets/images/user-img-1.png" alt="" class="feedback__user-img">
 
                                     <p class="feedback__name">
@@ -921,16 +925,16 @@
 
             <!-- Questions -->
 
-            <section class="questions">
+            <section class="questions" id="about">
                 <div class="container">
 
-                    <header class="section-header questions__header">
-                        <h2 class="title section-header__title">
+                    <header class="section-header questions__header" data-aos="flip-out" data-aos-duration="1000" data-aos-delay="500">
+                        <h2 class="title section-header__title section-header__title_opacity">
                             Frequently Asked Question
                         </h2>
                     </header>
 
-                    <section class="questions__section questions__section_questions">
+                    <section class="questions__section questions__section_questions" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">
 
                         <article class="question">
 
@@ -942,7 +946,7 @@
                                 <button class="question__btn"></button>
                             </section>
 
-                            <section class="question__hidden-section">
+                            <section class="question__hidden-section none">
                                 <p class="question__text">
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
                                 </p>
@@ -960,7 +964,7 @@
                                 <button class="question__btn"></button>
                             </section>
 
-                            <section class="question__hidden-section">
+                            <section class="question__hidden-section none">
                                 <p class="question__text">
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
                                 </p>
@@ -978,7 +982,7 @@
                                 <button class="question__btn"></button>
                             </section>
 
-                            <section class="question__hidden-section">
+                            <section class="question__hidden-section none">
                                 <p class="question__text">
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
                                 </p>
@@ -996,7 +1000,7 @@
                                 <button class="question__btn"></button>
                             </section>
 
-                            <section class="question__hidden-section">
+                            <section class="question__hidden-section none">
                                 <p class="question__text">
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
                                 </p>
@@ -1020,7 +1024,9 @@
 
                         <section class="questions__section-column">
                             <button class="questions__btn">
-                                Start your Free Trial
+                                <span class="questions__btn-wrapper">
+                                    Start your Free Trial
+                                </span>
                             </button>
                         </section>
 
@@ -1038,20 +1044,18 @@
         <!-- Footer -->
 
         <footer class="footer">
-            <div class="flex container">
+            <div class="flex container footer__container">
 
-                <section class="footer__section">
-                    <div class="logo">
-                        <a href="#" class="logo__link">
-                            <img src="assets/images/logo.svg" alt="Spyro" class="logo__img">
-                        </a>
+                <section class="flex footer__section footer__section_first">
+                    <div class="logo footer__logo">
+                        <a href="#" class="logo__link"></a>
                     </div>
 
                     <p class="footer__text">
                         Join us today and experience the transformative power of our fitness classes. Don't wait to start your fitness journey. Take the first step towards a healthier, stronger you. Let's sweat, have fun, and make fitness a way of life together!
                     </p>
 
-                    <div class="footer__soc-links">
+                    <div class="flex footer__soc-links">
                         <a href="#" class="footer__soc-link footer__soc-link_facebook"></a>
                         <a href="#" class="footer__soc-link footer__soc-link_twitter"></a>
                         <a href="#" class="footer__soc-link footer__soc-link_instagram"></a>
@@ -1059,7 +1063,7 @@
                     </div>
                 </section>
 
-                <section class="footer__section">
+                <section class="flex footer__section">
                     <p class="footer__reserved-text">
                         SPYRO 2023. All rights reserved.
                     </p>

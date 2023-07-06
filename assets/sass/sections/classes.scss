@@ -1,0 +1,176 @@
+// Classes Styles
+
+.classes {
+
+    width: 100%;
+    padding: 40px 0;
+    background-image: url("../images/classes-background.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    &__header {
+        margin-bottom: 40px;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    &__btn-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    &__btn {
+        @extend %btn;
+    }
+}
+
+.class {
+
+    &__section {
+
+        &_img {
+            margin-bottom: 20px;
+        }
+
+        &_text {
+            
+            & > *:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__text-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    &__text {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 170.9%;
+        letter-spacing: 0.02rem;
+        opacity: 0.9;
+
+        &_direction {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+
+            &::before {
+                content: "";
+                height: 8px;
+                width: 8px;
+                border-radius: 50%;
+                background: $primaryColor;
+                display: inline-block;
+            }
+        }
+
+        &_count {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+
+            &::before {
+                content: "";
+                height: 25px;
+                width: 25px;
+                background-image: url("../images/user-icon.svg");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                display: inline-block;
+            }
+        }
+    }
+
+    &__name {
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 170.9%;
+        letter-spacing: 0.03rem;
+        opacity: 0.9;
+    }
+
+    &__time {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-weight: 500;
+        line-height: 170.9%;
+        opacity: 0.9;
+
+        &::before {
+            content: "";
+            height: 25px;
+            width: 25px;
+            background-image: url("../images/time-icon.svg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            display: inline-block;
+        }
+    }
+
+    &__list {
+
+        & > *:not(:last-child) {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__list-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &::before {
+            content: "";
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            background: $white;
+            display: inline-block;
+        }
+    }
+
+    &__buttons-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__btn {
+
+        &_first {
+            @extend %btn-2;
+            min-width: 140px;
+        }
+
+        &_second {
+            @extend %btn-2;
+            min-width: 206px;
+            background: none;
+            border: 1px solid $white;
+            clip-path: none;
+            transform: skew(-15deg);
+        }
+
+        &-wrapper {
+            transform: skew(15deg);
+        }
+    }
+}

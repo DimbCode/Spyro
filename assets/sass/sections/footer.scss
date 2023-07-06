@@ -1,0 +1,100 @@
+// Footer Styles
+
+.footer {
+
+    width: 100%;
+    padding: 60px 0 20px 0;
+    background-image: url("../images/footer-background.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    &__container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__section {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+
+        &_first {
+            padding-bottom: 40px;
+            border-bottom: 1px solid $white;
+        }
+    }
+
+    &__text {
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 166.5%;
+        opacity: 0.8;
+        max-width: 876px;
+        margin-bottom: 30px;
+    }
+
+    &__logo {
+        margin-bottom: 30px;
+    }
+
+    &__soc-links {
+        gap: 15px;
+    }
+
+    &__soc-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        opacity: 1;
+        transition: .5s;
+        
+        &:hover {
+            opacity: 0.5;
+        }
+
+        &::before {
+            content: "";
+            height: 100%;
+            width: 100%;
+            display: inline-block;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        &_facebook::before { 
+            background-image: url("../images/facebook-icon.svg");
+        }
+
+        &_twitter::before {
+            background-image: url("../images/twitter-icon.svg");
+        }
+
+        &_instagram::before {
+            background-image: url("../images/instagram-icon.svg");
+        }
+
+        &_tiktok::before {
+            background-image: url("../images/tik-tok-icon.svg");
+        }
+    }
+
+    &__reserved-text {
+        font-weight: 500;
+        line-height: 166.5%;
+        opacity: 0.7;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+
+        &::before {
+            content: "";
+            height: 20px;
+            width: 20px;
+            background-image: url("../images/reserved-icon.svg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+    }
+}

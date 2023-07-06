@@ -1,0 +1,107 @@
+// Feedbacks Styles
+
+.feedbacks {
+
+    width: 100%;
+    padding: 50px 0;
+    background-image: url("../images/classes-background.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    &__header {
+        margin-bottom: 40px;
+    }
+
+    &__slider-wrapper {
+        overflow: hidden;
+    }
+
+    &__pagination {
+        margin-top: 46px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+
+        .swiper-pagination-bullet {
+            height: 8px;
+            width: 8px;
+            background: $primaryColor;
+            opacity: 0.5;
+            border-radius: 0;
+            margin: 0 !important;
+            transform: skew(-45deg);
+            transition: .5s;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+            width: 45px;
+        }
+    }
+}
+
+.feedback {
+    background: $black3;
+    padding: 50px 40px 40px 40px;
+    position: relative;
+    margin-bottom: 20px;
+
+    &__section {
+
+        &_text {
+            margin-bottom: 60px;
+        }
+
+        &_user {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        line-height: 150%;
+        text-transform: capitalize;
+        margin-bottom: 24px;
+    }
+
+    &__rate {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__user-img {
+        width: 60px;
+    }
+
+    &__name {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+    }
+
+    &::before {
+        content: "";
+        height: 10px;
+        width: 100%;
+        background: $primaryLinear;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+}
+
+.star-rate {
+
+    &__btn {
+        background: none;
+        opacity: 1;
+        transition: .5s;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}

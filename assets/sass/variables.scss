@@ -1,6 +1,7 @@
 // Fonts Variables
 
 $primaryFont: "Outfit";
+$secondaryFont: "Orbitron";
 
 $bold: 700;
 $extrabold: 800;
@@ -12,8 +13,12 @@ $thin: 300;
 // Colors Variables
 
 $primaryColor: #FF4601;
+$primaryLinear: linear-gradient(90deg, #FF4300 0%, #FF6400 100%);
 
 $black: #3F3F3F;
+$black2: #18171A;
+$black3: rgba(5, 5, 5, 0.60);
+
 $white: white;
 
 // Container Variables

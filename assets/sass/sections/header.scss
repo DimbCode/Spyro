@@ -1,0 +1,33 @@
+// Header Styles
+
+.header {
+
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+
+    &__container {
+        justify-content: space-between;
+    }
+
+    &__link-list {
+        gap: 40px;
+    }
+
+    &__link {
+        font-size: 1.25rem;
+        font-weight: $medium;
+        color: $white;
+        transition: .5s;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    &__btn {
+        @extend %btn;
+    }
+}

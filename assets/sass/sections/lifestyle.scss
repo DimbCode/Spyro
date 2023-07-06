@@ -1,0 +1,24 @@
+// Lifestyle Styles
+
+.lifestyle {
+
+    width: 100%;
+    padding-bottom: 80px;
+    background-image: url("../images/lifestyle-background.svg");
+    background-size: 908px 225px;
+    background-position: right bottom 30px;
+    background-repeat: no-repeat;
+
+    &__header {
+        margin-bottom: 40px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__img {
+        width: 596px;
+    }
+}

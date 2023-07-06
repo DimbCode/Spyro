@@ -7,6 +7,11 @@ body {
     color: $white;
 }
 
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
 .wrapper {
     max-width: 100vw;
     position: relative;
@@ -15,7 +20,7 @@ body {
 
 .main {
     min-height: 100vh;
-    background: $white;
+    background: $black2;
 }
 
 svg, img, video {
